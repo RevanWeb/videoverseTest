@@ -1,0 +1,267 @@
+body {
+  font-family: "Heebo", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.main-top {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+  background-image: linear-gradient(
+    to bottom,
+    #ffecff,
+    #fdf1ff,
+    #fcf6ff,
+    #fdfbff,
+    #ffffff
+  );
+  background-repeat: no-repeat;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  margin: 0;
+}
+.welcome-block {
+  width: 100%;
+  color: #7b237a;
+}
+.welcome-inner {
+  display: flex;
+  width: 100%;
+}
+.welcome-block-alpha,
+.welcome-block-beta {
+  width: 50%;
+}
+.welcome-block h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+.welcome-block-alpha h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.15rem;
+}
+.welcome-block-alpha h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.welcome-block-alpha p {
+  font-size: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+.welcome-block-alpha p > strong {
+  font-size: 1.25rem;
+}
+.welcome-block-beta img {
+  display: block;
+  width: 100%;
+}
+.price-plan {
+  display: block;
+  margin-top: 1.75rem;
+}
+.price-plan h4 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #7b237a;
+}
+.price-plan-list {
+  display: flex;
+}
+.price-plan-list h3 {
+  text-align: center;
+  color: #fff;
+  min-height: 2.3rem;
+  font-size: 1.25rem;
+}
+.price-plan-list h3 small {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+.each-price-plan h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.each-price-plan h2 > small {
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+.each-price-plan {
+  width: calc(25% - 0.7rem);
+  margin: 0.35rem;
+  padding: 0.5rem 0.25rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    #902692,
+    #8f1da2,
+    #8a16b3,
+    #8013c7,
+    #6f17db
+  );
+}
+.each-price-plan ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.each-price-plan ul li p {
+  position: relative;
+  font-size: 0.85rem;
+  margin-bottom: 0.45rem;
+  color: #e5d5ea;
+  padding-left: 0.75rem;
+}
+.each-price-plan ul li p:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border: 1px solid #fff;
+  width: 0.25rem;
+  height: 0.25rem;
+  background-color: #fff;
+}
+.each-price-plan button {
+  padding: 0.35rem 1rem;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  color: #42338f;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.each-price-plan button:hover {
+  border-radius: 1rem;
+}
+.footer-block {
+  background: #6a14e9;
+  padding: 6rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.footer-block:after {
+  content: "";
+  position: absolute;
+  top: -75%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: #fff;
+  transform: skew(0deg, -6deg);
+}
+.footer-block p {
+  font-size: 1rem;
+  color: #e9ddfb;
+}
+.footer-block ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+.footer-block ul li a {
+  display: inline-block;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  line-height: 0;
+  margin-left: 0.5rem;
+}
+.footer-block ul li a:hover {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 599px) {
+  .welcome-block h1 {
+    font-size: 1.5rem;
+  }
+  .welcome-block-alpha h2 {
+    font-size: 1.25rem;
+  }
+  .welcome-block-alpha p {
+    font-size: 0.85rem;
+  }
+  .price-plan h4 {
+    margin-bottom: 0.5rem;
+  }
+  .footer-block p {
+    font-size: 0.85rem;
+  }
+  .each-price-plan button {
+    padding: 0.3rem 0.5rem;
+  }
+  .each-price-plan {
+    width: calc(48% - 0.7rem);
+  }
+  .each-price-plan h2 {
+    font-size: 2rem;
+  }
+  .price-plan-list h3 {
+    font-size: 1.125rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .welcome-block-alpha,
+  .welcome-block-beta {
+    width: 100%;
+  }
+  .welcome-inner {
+    display: block;
+  }
+  .each-price-plan {
+    width: calc(100% - 0.7rem);
+    padding: 0.75rem;
+  }
+  .welcome-block h1 {
+    text-align: left;
+    margin-bottom: 0.15rem;
+    font-size: 1.5rem;
+  }
+  .welcome-block-alpha h2 {
+    font-size: 1.125rem;
+  }
+  .welcome-block-alpha p {
+    font-size: 0.85rem;
+  }
+  .each-price-plan h2 {
+    font-size: 2rem;
+  }
+  .footer-block p {
+    font-size: 0.85rem;
+  }
+  .price-plan-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
